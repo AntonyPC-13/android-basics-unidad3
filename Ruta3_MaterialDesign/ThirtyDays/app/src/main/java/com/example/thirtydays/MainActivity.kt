@@ -105,7 +105,6 @@ fun StudyTipsList(
         modifier = modifier,
         contentPadding = contentPadding
     ) {
-        // itemsIndexed da la posición: el día es índice + 1
         itemsIndexed(tips) { index, tip ->
             StudyTipCard(
                 day = index + 1,
@@ -124,7 +123,6 @@ fun StudyTipCard(
 ) {
     var expanded by remember { mutableStateOf(false) }
 
-    // Toda la tarjeta es clickeable: el área táctil es mayor a 48dp (accesibilidad)
     Card(
         onClick = { expanded = !expanded },
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
@@ -179,7 +177,6 @@ fun TipImage(tip: StudyTip, modifier: Modifier = Modifier) {
             .background(MaterialTheme.colorScheme.primaryContainer),
         contentAlignment = Alignment.Center
     ) {
-        // Decorativa: el título ya describe el consejo
         Icon(
             imageVector = tip.image,
             contentDescription = null,

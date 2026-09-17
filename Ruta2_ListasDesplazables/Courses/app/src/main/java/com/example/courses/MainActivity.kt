@@ -62,7 +62,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// Cuadrícula desplazable de 2 columnas con 8dp de separación entre tarjetas
 @Composable
 fun TopicGrid(modifier: Modifier = Modifier) {
     LazyVerticalGrid(

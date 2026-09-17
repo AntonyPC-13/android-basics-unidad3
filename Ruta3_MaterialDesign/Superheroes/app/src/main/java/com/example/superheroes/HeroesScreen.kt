@@ -47,7 +47,6 @@ fun HeroesList(
     modifier: Modifier = Modifier,
     contentPadding: PaddingValues = PaddingValues(0.dp),
 ) {
-    // Empieza invisible y cambia a visible apenas se muestra: dispara la animación de entrada
     val visibleState = remember {
         MutableTransitionState(false).apply {
             targetState = true
@@ -68,7 +67,7 @@ fun HeroesList(
                     hero = hero,
                     modifier = Modifier
                         .padding(horizontal = 16.dp, vertical = 8.dp)
-                        // Cada tarjeta entra deslizándose; las de más abajo empiezan más lejos
+
                         .animateEnterExit(
                             enter = slideInVertically(
                                 animationSpec = spring(

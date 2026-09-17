@@ -77,7 +77,6 @@ private val DarkColors = darkColorScheme(
 @Composable
 fun SuperheroesTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color desactivado para usar la paleta propia de la app
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {

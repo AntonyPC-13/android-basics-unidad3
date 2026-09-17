@@ -77,7 +77,6 @@ private val DarkColors = darkColorScheme(
 @Composable
 fun ThirtyDaysTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Desactivado para que la app conserve su identidad azul en todos los equipos
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {

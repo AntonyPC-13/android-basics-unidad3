@@ -66,7 +66,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun WoofApp() {
-    // Scaffold da el espacio para la barra superior y pasa el padding al contenido
     Scaffold(
         topBar = {
             WoofTopAppBar()
@@ -88,14 +87,13 @@ fun DogItem(
     dog: Dog,
     modifier: Modifier = Modifier
 ) {
-    // Estado que recuerda si la tarjeta está expandida; al cambiar provoca recomposición
     var expanded by remember { mutableStateOf(false) }
     Card(
         modifier = modifier
     ) {
         Column(
             modifier = Modifier
-                // Anima el cambio de altura con un resorte sin rebote
+
                 .animateContentSize(
                     animationSpec = spring(
                         dampingRatio = Spring.DampingRatioNoBouncy,
@@ -162,7 +160,6 @@ fun WoofTopAppBar(modifier: Modifier = Modifier) {
                         .size(dimensionResource(R.dimen.image_size))
                         .padding(dimensionResource(R.dimen.padding_small)),
                     painter = painterResource(R.drawable.ic_woof_logo),
-                    // El logo es decorativo: null permite que TalkBack lo omita
                     contentDescription = null
                 )
                 Text(
@@ -187,7 +184,6 @@ fun DogIcon(
             .clip(MaterialTheme.shapes.small),
         contentScale = ContentScale.Crop,
         painter = painterResource(dogIcon),
-        // Imagen decorativa: el nombre del perro ya aparece como texto
         contentDescription = null
     )
 }

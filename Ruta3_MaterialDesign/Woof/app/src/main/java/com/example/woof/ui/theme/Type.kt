@@ -12,7 +12,6 @@ val AbrilFatface = FontFamily(
     Font(R.font.abril_fatface_regular)
 )
 
-// Se indica FontWeight.Bold porque Compose no sabe por el archivo que la fuente es negrita
 val Montserrat = FontFamily(
     Font(R.font.montserrat_regular),
     Font(R.font.montserrat_bold, FontWeight.Bold)

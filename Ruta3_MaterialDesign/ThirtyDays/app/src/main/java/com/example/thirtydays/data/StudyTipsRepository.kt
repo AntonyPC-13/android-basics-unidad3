@@ -34,7 +34,6 @@ import androidx.compose.material.icons.filled.Timer
 import com.example.thirtydays.R
 import com.example.thirtydays.model.StudyTip
 
-// Un consejo por día: la posición en la lista (índice + 1) es el número de día
 object StudyTipsRepository {
     val tips = listOf(
         StudyTip(R.string.tip_title_1, R.string.tip_desc_1, Icons.Filled.Flag),

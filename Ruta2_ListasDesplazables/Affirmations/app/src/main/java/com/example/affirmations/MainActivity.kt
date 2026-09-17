@@ -66,7 +66,6 @@ fun AffirmationsApp() {
     }
 }
 
-// LazyColumn solo compone los elementos visibles y ya trae scroll incorporado
 @Composable
 fun AffirmationList(affirmationList: List<Affirmation>, modifier: Modifier = Modifier) {
     LazyColumn(modifier = modifier) {

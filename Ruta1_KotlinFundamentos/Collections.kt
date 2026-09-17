@@ -1,6 +1,3 @@
-// Codelab: Use collections in Kotlin
-// Se ejecuta en Kotlin Playground (https://play.kotlinlang.org)
-
 fun main() {
     arrays()
     lists()
@@ -8,7 +5,6 @@ fun main() {
     maps()
 }
 
-// Array: tamaño fijo, acceso por índice (empieza en 0)
 fun arrays() {
     println("=== Arrays ===")
     val rockPlanets = arrayOf<String>("Mercury", "Venus", "Earth", "Mars")
@@ -27,14 +23,10 @@ fun arrays() {
     solarSystem[3] = "Little Earth"
     println(solarSystem[3])
 
-    // solarSystem[8] = "Pluto"
-    // Lanza ArrayIndexOutOfBoundsException: el array solo tiene 8 posiciones (0 a 7)
-
     val newSolarSystem = arrayOf("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto")
     println(newSolarSystem[8])
 }
 
-// List: ordenada y de solo lectura. MutableList: permite agregar, cambiar y quitar
 fun lists() {
     println("=== List ===")
     val readOnlySolarSystem = listOf("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
@@ -62,7 +54,6 @@ fun lists() {
     println("Future Moon" in solarSystem)
 }
 
-// Set: sin orden y sin duplicados (usa hashCode)
 fun sets() {
     println("=== MutableSet ===")
     val solarSystem = mutableSetOf("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
@@ -71,7 +62,7 @@ fun sets() {
     println(solarSystem.size)
     println(solarSystem.contains("Pluto"))
 
-    solarSystem.add("Pluto") // no se agrega: ya existe
+    solarSystem.add("Pluto")
     println(solarSystem.size)
 
     solarSystem.remove("Pluto")
@@ -79,7 +70,6 @@ fun sets() {
     println(solarSystem.contains("Pluto"))
 }
 
-// Map: pares clave-valor, las claves son únicas
 fun maps() {
     println("=== MutableMap ===")
     val solarSystem = mutableMapOf(
@@ -96,7 +86,7 @@ fun maps() {
     solarSystem["Pluto"] = 5
     println(solarSystem.size)
     println(solarSystem["Pluto"])
-    println(solarSystem.get("Theia")) // null: la clave no existe
+    println(solarSystem.get("Theia"))
 
     solarSystem.remove("Pluto")
     println(solarSystem.size)

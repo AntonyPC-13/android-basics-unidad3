@@ -77,8 +77,6 @@ private val DarkColors = darkColorScheme(
 @Composable
 fun WoofTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic Color toma los colores del fondo de pantalla (Android 12+).
-    // Se deja en false para usar la paleta propia de la app.
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {

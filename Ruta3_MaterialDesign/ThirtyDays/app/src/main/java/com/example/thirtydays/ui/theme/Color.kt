@@ -2,7 +2,6 @@ package com.example.thirtydays.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Paleta Material 3 generada a partir del color primario azul #415F91
 val md_theme_light_primary = Color(0xFF415F91)
 val md_theme_light_onPrimary = Color(0xFFFFFFFF)
 val md_theme_light_primaryContainer = Color(0xFFD6E3FF)

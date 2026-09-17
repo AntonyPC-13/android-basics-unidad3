@@ -3,7 +3,6 @@
     <string name="day_number">Día %d</string>
     <string name="expand_tip">Mostrar el consejo completo</string>
     <string name="collapse_tip">Ocultar el consejo</string>
-
     <string name="tip_title_1">Define tu meta del mes</string>
     <string name="tip_desc_1">Escribe en una frase qué quieres lograr en estos 30 días, por ejemplo aprobar un curso o terminar un proyecto, y pégala donde la veas todos los días.</string>
     <string name="tip_title_2">Arma tu horario semanal</string>
